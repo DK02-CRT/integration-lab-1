@@ -3,4 +3,4 @@
 * Konieczna jest realizacja (użycie) wszystkich punktów 1-6 opisanych w tym laboratorium.
 * Należy stworzyć co najmniej dwie dodatkowe gałęzie (branches) oprócz głównej (main) i ich nie usuwać z repozytorium na GitHubie.
 * Do każdego laboratorium należy sporządzić sprawozdanie w formacie PDF (np. w produktach JetBrains mamy opcję 'Tools->Markdown->Export to PDF').
-` python manage.py runserver
+` python manage.py runserver `
