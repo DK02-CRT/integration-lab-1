@@ -8,3 +8,4 @@
 * Należy stworzyć co najmniej dwie dodatkowe gałęzie (branches) oprócz głównej (main) i ich nie usuwać z repozytorium na GitHubie.
 * Do każdego laboratorium należy sporządzić sprawozdanie w formacie PDF (np. w produktach JetBrains mamy opcję 'Tools->Markdown->Export to PDF').
 ` python manage.py runserver `
+[Link do mojego repozytorium](https://github.com/DK02-CRT/integration-lab-1)
