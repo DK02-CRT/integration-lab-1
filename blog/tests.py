@@ -1,3 +1,8 @@
 from django.test import TestCase
+from .models import Post
 
-# Create your tests here.
+class PostModelTest(TestCase):
+
+    def test_create_post(self):
+        post = Post.objects.create(title="Test", content="Test content")
+        self.assertEqual(post.title, "Test")
