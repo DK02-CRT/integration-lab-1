@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'base',
     'blog',
     'external_data',
+    'weather_app',
 ]
 
 MIDDLEWARE = [
