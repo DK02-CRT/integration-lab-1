@@ -14,6 +14,6 @@ jobs:
           pip install -r requirements.txt
           pip install flake8
       - name: Run linter
-        run: flake8 .
+        run: flake8 . --exclude=venv,__pycache__,migrations
       - name: Run tests
         run: python manage.py test
