@@ -36,17 +36,18 @@ coordinates = {
     "Warszawa": ("52.237", "21.017"),
     "Tokyo": ("35.65", "139.84")
 }
+
+
 def weather_view(request):
     place = "Gdynia"
     weather_url = (f"https://api.open-meteo.com/v1/forecast"
-                   f"?latitude={coordinates[place][0]}&longitude={coordinates[place][1]}"
+                   f"?latitude={coordinates[place][0]}&"
+                   f"longitude={coordinates[place][1]}"
                    f"&hourly=temperature_2m,rain,weather_code,wind_speed_10m")
     response = requests.get(weather_url)
     data = response.json()
     temperature = data["hourly"]["temperature_2m"][0]
     wind = data["hourly"]["wind_speed_10m"][0]
-
-
     return render(request, "weather_app/weather.html", {
         "place": place,
         "temperature": temperature,

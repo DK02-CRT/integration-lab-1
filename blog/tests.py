@@ -4,6 +4,7 @@ from .models import Post
 from django.contrib.auth.models import User
 from .views import PostListView, PostDetailView
 
+
 class PostModelTest(TestCase):
 
     def setUp(self):
