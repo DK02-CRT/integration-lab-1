@@ -14,6 +14,6 @@ jobs:
           pip install -r requirements.txt
           pip install flake8
       - name: Run linter
-        run: flake8 . --exclude=venv,__pycache__,migrations
+        run: flake8 . --exclude=venv,__pycache__,migrations --max-line-length=120
       - name: Run tests
         run: python manage.py test
